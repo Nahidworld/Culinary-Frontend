@@ -1,7 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
+import router from "next/router"
 
-const Navbar = () => {
+const Navuser = () => {
   return (
     <header className="bg-neutral-300">
       <div className="flex items-center justify-between max-w-7xl mx-auto px-4 py-2">
@@ -24,17 +25,15 @@ const Navbar = () => {
             <button className="btn">ORDER</button>
           </Link>
 
-          
         </div>
-        
         <div className="flex-none">
-          <Link href="/login">
-            <button className="btn btn-outline btn-success ">Sign In</button>
-          </Link>
+          {/* <Link href="/home"> */}
+            <button onClick={() => router.push('/login')} className="btn w-full bg-red-500 text-white p-2 rounded hover:bg-red-600 ">Log Out</button>
+          {/* </Link> */}
         </div>
       </div>
     </header>
   )
 }
 
-export default Navbar
+export default Navuser

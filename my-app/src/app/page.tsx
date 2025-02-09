@@ -1,4 +1,5 @@
 "use client";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/NavBar";
 import RegistrationForm from "@/components/RegistrationForm";
 import axios from "axios"
@@ -30,15 +31,17 @@ const componentName =()=> {
   return (
     <div>
       <header>
-      <div className="Nav">
-              <Navbar />
-            </div>
-      <br />
+        <div className="Nav">
+            <Navbar />
+        </div>
+        <br />
       </header>
       <main>
         <RegistrationForm/>
       </main>
-      
+      <footer>
+        <Footer />
+      </footer>
       <div>
         {/* <header className="bg-neutral-200">
           <div className="flex">
@@ -67,7 +70,7 @@ const componentName =()=> {
           <button type="submit">ADD</button>
         </form>
       </section> */}
-
+    
 
     </div>
   )
